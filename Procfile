@@ -1,1 +1,1 @@
-web: php server.php
+web: php artisan serve
