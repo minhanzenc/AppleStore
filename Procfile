@@ -1,1 +1,1 @@
-web: php artisan serve --port=process.env.PORT
+web: php artisan serve --port=8000
