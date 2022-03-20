@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Str;
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
 return [
 
@@ -15,7 +16,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'defau  lt' => env('DB_CONNECTION', 'mysql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -45,12 +46,12 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'weblaravel'),
-            'username' => env('DB_USERNAME', 'root'),
-            'password' => env('DB_PASSWORD', ''),
+            'url' => parse_url(getenv("CLEARDB_DATABASE_URL")),
+            'host' =>$url["host"],
+            'port' => $url["port"],
+            'database' => substr($url["path"], 1),
+            'username' => $url["user"],
+            'password' => $url["pass"],
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
