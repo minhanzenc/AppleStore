@@ -46,12 +46,12 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => 'sql6.freemysqlhosting.net',
-            'host' => 'sql6.freemysqlhosting.net',
+            'url' => 'mysql://b60f79f184f165:11c13ee4@us-cdbr-east-05.cleardb.net/heroku_df83d92382ee0b0?reconnect=true',
+            'host' => 'us-cdbr-east-05.cleardb.net',
             'port' => '3306',
-            'database' => 'sql6480280',
+            'database' => 'b60f79f184f165',
             'username' => 'sql6480280',
-            'password' => 'nI96cyqRAX',
+            'password' => '11c13ee4',
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
