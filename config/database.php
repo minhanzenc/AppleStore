@@ -46,8 +46,8 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => 'ssql6.freemysqlhosting.net',
-            'host' => 'ssql6.freemysqlhosting.net',
+            'url' => 'sql6.freemysqlhosting.net',
+            'host' => 'sql6.freemysqlhosting.net',
             'port' => '3306',
             'database' => 'sql6480280',
             'username' => 'sql6480280',
